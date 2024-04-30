@@ -32,6 +32,7 @@ section.hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    place-content: center;
     gap: 20px;
 }
 
@@ -39,6 +40,7 @@ section.hero .hero-text {
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .hero-text h1 {
@@ -49,6 +51,15 @@ section.hero .hero-text {
 
 .hero-text h2 {
     font-size: 1.4em;
+}
+
+.hero-text p{
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(202, 221, 246, 0.2);
+    font-style: italic;
+    font-family: Fjalla One;
+    border-radius:15px;
 }
 
 .text-accent {
@@ -66,4 +77,5 @@ section.hero .hero-text {
     object-fit: contain;
     border-radius: 15px;
     min-width: 200px;
+    
 }
