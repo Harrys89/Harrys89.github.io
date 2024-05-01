@@ -100,7 +100,7 @@ section.hero .hero-text {
     object-fit: contain;
     border-radius: 15px;
     min-width: 200px;
-    
+
 
 }
 
@@ -128,28 +128,79 @@ section.skills ul li {
 }
 
 section.skills ul li .skill-shadow {
-    background-color: rgba(100, 100, 100, 0.2);
+    background-color: rgba(100, 100, 100, 0.8);
     border-radius: 1rem;
 }
 
-section.skills ul li .skill-bar {
+section.skills ul li .skill-bar1 {
     background-color: red;
     border-radius: 1rem;
     width: 70%;
     font-style: italic;
     padding: 0.5rem 0;
-    font-size: 1.3em;
+    font-size: 1em;
+}
+
+section.skills ul li .skill-bar2 {
+    background-color: red;
+    border-radius: 1rem;
+    width: 70%;
+    font-style: italic;
+    padding: 0.5rem 0;
+    font-size: 1em;
+}
+
+section.skills ul li .skill-bar3 {
+    background-color: red;
+    border-radius: 1rem;
+    width: 70%;
+    font-style: italic;
+    padding: 0.5rem 0;
+    font-size: 1em;
 }
 
 
-.skill-bar span.value {
+section.skills ul li .skill-bar4 {
+    background-color: red;
+    border-radius: 1rem;
+    width: 70%;
+    font-style: italic;
+    padding: 0.5rem 0;
+    font-size: 1em;
+}
+
+.skill-bar1 span.value {
     margin-left: 1rem;
 }
 
-.skill-bar span.value::after {
+
+.skill-bar2 span.value {
+    margin-left: 1rem;
+}
+
+.skill-bar3 span.value {
+    margin-left: 1rem;
+}
+
+.skill-bar4 span.value {
+    margin-left: 1rem;
+}
+
+.skill-bar1 span.value::after {
     content: "%";
 }
 
+.skill-bar2 span.value::after {
+    content: "%";
+}
+
+.skill-bar3 span.value::after {
+    content: "%";
+}
+
+.skill-bar4 span.value::after {
+    content: "%";
+}
 
 section.skills {
     display: flex;
@@ -164,3 +215,38 @@ section.skills {
     background-size: cover;
     background-position: center;
 }
+
+
+
+div .skill-bar1 {
+    color: blue;
+}
+
+div .skill-bar2 {
+    color: greenyellow;
+}
+
+div .skill-bar3 {
+    color: yellow;
+}
+
+div .skill-bar4 {
+    color: red;
+}
+
+li h31 {
+    color: blue;
+}
+
+li h32 {
+    color: rgb(252, 0, 0);
+}
+
+li h33 {
+    color: rgb(252, 6, 47);
+}
+
+li h34 {
+    color: rgb(17, 0, 255);
+}
+
