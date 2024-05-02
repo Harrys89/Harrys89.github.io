@@ -68,8 +68,9 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--accent-color);
-    text-shadow: 0 0 10px var(--accent-color);
-}
+    text-shadow: 15px 15px 15px;
+    
+   }
 
 section.hero {
     display: grid;
@@ -141,7 +142,7 @@ section.hero .hero-text {
 
 }
 
-section.project ul li img {
+section.projekt ul li img {
     border-radius: 15px;
 }
 
@@ -253,6 +254,14 @@ section.skills {
     background-position: center;
 }
 
+section.projekt ul {
+    display: grid;
+    display: flex;
+    list-style: none;
+    max-width: 400px;
+    min-width: 200px;
+    flex-direction: column;
+}
 
 
 div .skill-bar1 {
@@ -339,11 +348,12 @@ ul.timeline-items .timeline-dot {
     width: 24px;
     background-color: var(--accent-color);
     border-radius: 50%;
-    right: calc(50% + 30px);
+    right: calc(50% + -30px);
     box-shadow: 0 0 25px var(--accent-color);
 }
 
 ul.timeline-item .timeline-date {
+    display: inline-block;
     font-size: 20px;
     font-weight: 800;
     margin: 10px 0 15px 0;
@@ -376,20 +386,22 @@ transform: scale(1.05);
     margin: 0;
 }
 
-section.projekt {
+section.projekt ul{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     padding: 2rem;
+    gap: 5rem;
+    cursor: pointer;
 }
 
-section.projekt {
+section.projekt  {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    
 }
 
 section.projekt ul li {
@@ -397,7 +409,7 @@ section.projekt ul li {
     max-width: 400px;
     min-width: 200px;
     background-color: var(--primary-color);
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
     box-shadow: 4px 4px 10px var(--primary-color);
     flex-shrink: 1;
     flex-basis: 400px;
