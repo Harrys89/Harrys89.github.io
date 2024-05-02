@@ -9,12 +9,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    font-family: "IBM Pflex Serif", sans-serif;
 }
 
 main {
     color: white;
     height: 100vh;
     position: fixed;
+    width: 100%;
     overflow: scroll;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -372,4 +374,56 @@ transform: scale(1.05);
     font-size: 16px;
     font-weight: 300;
     margin: 0;
+}
+
+section.projekt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+section.projekt {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section.projekt ul li {
+    border: 1px solid white;
+    max-width: 400px;
+    min-width: 200px;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 10px var(--primary-color);
+    flex-shrink: 1;
+    flex-basis: 400px;
+}
+ section.projekt ul li img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+ }
+
+section.projekt ul li h4 {
+    margin: 0.5 1rem;
+    font-size: 1.2em;
+}
+
+section.projekt ul li {
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+section.projekt ul li button {
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    background-color: var(--accent-color);
+    font-size: 1.1em;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 4px black;
 }
