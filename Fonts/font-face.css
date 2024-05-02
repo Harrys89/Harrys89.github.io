@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "IBM Plex Serif";
+    src: url(./IBMPlexSerif-Thin.ttf);
+    font-synthesis-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IBM Plex Serif";
+    src: url(./IBMPlexSerif-ThinItalic.ttf);
+    font-synthesis-weight: 100;
+    font-style: italic;
+}
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-ExtraLight.ttf);
+        font-synthesis-weight: 200;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-ExtraLightItalic.ttf);
+        font-synthesis-weight: 200;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-Light.ttf);
+        font-synthesis-weight: 300;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-Regular.ttf);
+        font-synthesis-weight: 400;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-Italic.ttf);
+        font-synthesis-weight: 400;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-Medium.ttf);
+        font-synthesis-weight: 500;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-MediumItalic.ttf);
+        font-synthesis-weight: 500;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-SemiBold.ttf);
+        font-synthesis-weight: 600;
+        font-style: normal;
+    }
+    vfont-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-SemiBoldItalic.ttf);
+        font-synthesis-weight: 600;
+        font-style: normal;
+    }
+    font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-Bold.ttf);
+        font-synthesis-weight: 700;
+        font-style: normal;
+    }font-face {
+        font-family: "IBM Plex Serif";
+        src: url(./IBMPlexSerif-BoldItalic.ttf);
+        font-synthesis-weight: 700;
+        font-style: normal;
+    }

@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-    font-family: "IBM Pflex Serif", sans-serif;
+    font-family: "IBM Plex Serif", sans-serif;
 }
 
 main {
@@ -271,11 +271,11 @@ div .skill-bar4 {
     color: red;
 }
 
-li h31 {
+li h3#html-skill {
     color: blue;
 }
 
-li h32 {
+li h3#css-skill {
     color: rgb(252, 0, 0);
 }
 
