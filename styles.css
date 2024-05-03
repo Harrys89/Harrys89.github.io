@@ -12,6 +12,8 @@ body {
     font-family: "IBM Plex Serif", sans-serif;
 }
 
+
+
 main {
     color: white;
     height: 100vh;
@@ -81,12 +83,15 @@ section.hero {
 }
 
 section.hero .hero-text {
+    
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
     text-align: center;
     color: #83eab3;
+    
 }
+
 
 .hero-text h1 {
     font-size: 2.5em;
@@ -133,8 +138,8 @@ section.hero .hero-text {
 }
 
 .hero img {
-    height: 100%;
-    max-width: 500px;
+    height:100%;
+    max-width: 200px;
     object-fit: contain;
     border-radius: 15px;
     min-width: 200px;
@@ -154,7 +159,6 @@ section.skills ul {
     list-style: none;
     padding: 0;
     gap: 2rem;
-
 }
 
 section.skills ul li {
@@ -361,7 +365,7 @@ ul.timeline-item .timeline-date {
 
 ul.timeline-items .timeline-content {
     border: 3px solid var(--accent-color);
-    padding: 20px 40px;
+    padding: 10px 30px;
     border-radius: 75px;
     background-color: var(--background-color);
     box-shadow: 0 0 10px var(--accent-color);
@@ -375,24 +379,25 @@ transform: scale(1.05);
 }
 
 .timeline-content h3 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
 .timeline-content p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     margin: 0;
 }
 
 section.projekt ul{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     padding: 2rem;
-    gap: 5rem;
+    gap: 2rem;
     cursor: pointer;
 }
 
@@ -401,7 +406,7 @@ section.projekt  {
     padding: 0;
     display: flex;
     justify-content: center;
-    
+    padding: 2rem;
 }
 
 section.projekt ul li {
@@ -413,10 +418,13 @@ section.projekt ul li {
     box-shadow: 4px 4px 10px var(--primary-color);
     flex-shrink: 1;
     flex-basis: 400px;
+    transition: all 0.3s ease;
 }
  section.projekt ul li img {
+    height: 150px;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
+
  }
 
 section.projekt ul li h4 {
@@ -429,13 +437,103 @@ section.projekt ul li {
 }
 
 section.projekt ul li button {
+    display: inline-block;
+    text-decoration: none;
     margin-bottom: 1rem;
     margin-left: 0.5rem;
     border-radius: 1rem;
-    padding: 0.8rem;
+    padding: 0.9rem;
     background-color: var(--accent-color);
     font-size: 1.1em;
     font-weight: 700;
     color: white;
     text-shadow: 0 0 4px black;
+    box-shadow: 2px 2px 6px #d2e00c;
+}
+section.projekt ul li:hover {
+    box-shadow: 6px 6px 20px var(--accent-color);
+    transform: translateY(-1rem) translateX(0.5rem);
+}
+
+/* Media-Querues */
+@media screen and (max-width: 900px) {
+    section.hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+
+    }
+
+section.hero .hero-text {
+    font-size: 0.9em;
+    height: 100%;
+    justify-content: end;
+}
+
+section.hero .hero-text p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    max-width: 55ch;
+}
+
+section.hero .hero-text h1 {
+    margin: 0;
+}
+
+
+
+    section.skills ul {
+        transform: scale(0.8);
+    }
+    section.skills ul li {
+        section.timeline h2.timeline-title {
+            margin: 0;
+        }
+        width: 80%;
+        section.timeline ul.timeline-items {
+           max-width: fit-content; 
+        }
+        .timeline-content p {
+            max-width: 30vw;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        section.timeline {
+            padding: 0.6rem;
+            justify-content: end;
+        }
+    }
+}
+
+/* Project Mobile Section */
+
+section.projekt ul{
+    flex-direction: column;
+    align-items: center;
+}
+
+section.projekt ul li {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    flex-basis: auto;
+    max-height: 25vh;
+}
+
+    section.projekt ul li .card-content{
+        display: flex;
+        flex-direction: column;
+    }
+section.projekt ul li img {
+    width: 50%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+section.projekt ul li .card-content a {
+    margin-top: auto;
+    margin-bottom: 0.3rem;
+    align-self: start;
+    width: 200px;
 }
