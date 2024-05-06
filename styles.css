@@ -53,10 +53,10 @@ nav ul {
     align-items: center;
 }
 
-nav ul li:not(:last-child)::after {
-    content: " |";
-    color: var(--primary-color);
-    margin-left: 1rem;
+nav ul li:not(:last-child):after {
+    content: "|";
+    color: yellow;
+    margin-left: -0.5rem;
 }
 
 
@@ -154,6 +154,11 @@ section.projekt ul li img {
     border-radius: 15px;
 }
 
+section.projekt ul li div h4 {
+
+  max-height: 0% ;
+}
+
 section.skills ul {
     place-content: center;
     place-items: center;
@@ -231,9 +236,7 @@ section.skills ul li .skill-bar4 {
     margin-left: 1rem;
 }
 
-.skill-bar1 span.value::after {
-    content: "%";
-}
+
 
 .skill-bar2 span.value::after {
     content: "%";
@@ -295,11 +298,11 @@ li h3#css-skill {
     color: rgb(252, 0, 0);
 }
 
-li h33 {
+li h3#javascript-skill {
     color: rgb(252, 6, 47);
 }
 
-li h34 {
+li h3#vibes-skill {
     color: rgb(17, 0, 255);
 }
 
@@ -417,7 +420,7 @@ section.projekt  {
 
 section.projekt ul li {
     border: 1px solid white;
-    max-width: 400px;
+    max-width: 400PX;
     min-width: 200px;
     background-color: var(--primary-color);
     border-radius: 1rem 1rem 0 0;
@@ -434,8 +437,8 @@ section.projekt ul li {
  }
 
 section.projekt ul li h4 {
-    margin: 0.5 1rem;
-    font-size: 1.2em;
+    margin:  -0.2em;
+    font-size: 0.9em;
 }
 
 section.projekt ul li {
@@ -445,16 +448,17 @@ section.projekt ul li {
 section.projekt ul li button {
     display: inline-block;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2em;
     margin-left: 0.5rem;
-    border-radius: 1rem;
-    padding: 0.9rem;
+    border-radius: 0.7rem;
+    padding: 0rem;
     background-color: var(--accent-color);
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 700;
     color: white;
     text-shadow: 0 0 4px black;
     box-shadow: 2px 2px 6px #d2e00c;
+    width: 100px;
 }
 section.projekt ul li:hover {
     box-shadow: 6px 6px 20px var(--accent-color);
@@ -486,8 +490,9 @@ section.hero .hero-text h1 {
     margin: 0;
 }
 
-
-
+section.timeline ul li div {
+    max-width: 100px;
+}
     section.skills ul {
         transform: scale(0.8);
     }
