@@ -142,7 +142,7 @@ section.hero .hero-text {
 
 .hero img {
     height:90%;
-    max-width: 200px;
+    max-width: 400px;
     object-fit: contain;
     border-radius: 15px;
     min-width: 200px;
