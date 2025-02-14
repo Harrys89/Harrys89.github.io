@@ -283,15 +283,15 @@ section.projekt ul {
 
 
 div .skill-bar1 {
-    color: blue;
+    color: yellow;
 }
 
 div .skill-bar2 {
-    color: greenyellow;
+    color: lightskyblue;
 }
 
 div .skill-bar3 {
-    color: yellow;
+    color: blue;
 }
 
 div .skill-bar4 {
@@ -299,7 +299,7 @@ div .skill-bar4 {
 }
 
 li h3#html-skill {
-    color: blue;
+    color: yellow;
 }
 
 li h3#css-skill {
