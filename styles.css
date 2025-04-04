@@ -244,7 +244,9 @@ section.skills ul li .skill-bar4 {
     margin-left: 1rem;
 }
 
-
+.skill-bar1 span.value::after{
+    content: "%";
+}
 
 .skill-bar2 span.value::after {
     content: "%";
